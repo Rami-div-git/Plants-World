@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/services.css">
+    <title>Services</title>
+</head>
+
+<body>
+
+    <!-- Header Desing -->
+    <header>
+        <nav>
+            <ul id="sidebar-open" class="sidebar">
+                <li onclick=hideSidebar()> <a href="#"><i class="material-icons">close</i></a></li>
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="plants.html">Plants</a> </li>
+                <li> <a href="services.html">Services</a> </li>
+                <li> <a href="contact.html">Contact</a> </li>
+                <li> <a href="#user"><i class="fa fa-user"></i></a> </li>
+            </ul>
+            <ul>
+                <li class="logo"> <a href="#logo">Plants World</a> </li>
+                <li class="hideOnMobile"> <a href="index.html">Home</a> </li>
+                <li class="hideOnMobile"> <a href="plants.html">Plants</a> </li>
+                <li class="hideOnMobile"> <a href="services.html">Services</a> </li>
+                <li class="hideOnMobile"> <a href="contact.html">Contact</a> </li>
+                <li class="hideOnMobile" id="acount-size"> <a href="#user"><i class="fa fa-user"></i></a> </li>
+                <li class="menu-button" onclick=showSidebar()> <a href="#menu"><i class="material-icons">menu</i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="services">
+        <h2 class="title">Our Services</h2>
+        <div class="card-serv">
+
+            <div class="card-info">
+                <h2 class="title-card">Agriculture</h2>
+                <span class="descrption-card">We can grow any crop with the latest agricultural technologies
+                    available.</span>
+            </div>
+
+            <div class="card-info">
+                <h2 class="title-card">Agriculture</h2>
+                <span class="descrption-card">We can grow any crop with the latest agricultural technologies
+                    available.</span>
+            </div>
+
+            <div class="card-info">
+                <h2 class="title-card">Agriculture</h2>
+                <span class="descrption-card">We can grow any crop with the latest agricultural technologies
+                    available.</span>
+            </div>
+
+            <div class="card-info">
+                <h2 class="title-card">Agriculture</h2>
+                <span class="descrption-card">We can grow any crop with the latest agricultural technologies
+                    available.</span>
+            </div>
+
+            <div class="card-info">
+                <h2 class="title-card">Agriculture</h2>
+                <span class="descrption-card">We can grow any crop with the latest agricultural technologies
+                    available.</span>
+            </div>
+
+            <div class="card-info">
+                <h2 class="title-card">Agriculture</h2>
+                <span class="descrption-card">We can grow any crop with the latest agricultural technologies
+                    available.</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer Desing -->
+    <footer>
+        <div class="left-footer">
+            <div class="logo">
+                <h1>plants world</h1>
+            </div>
+            <span>I look for new job call me now bro!</span>
+        </div>
+        <div class="mid-footer">
+            <h1 style="color: #fff; font-size: 2.6rem;">QUICK LINKS</h1>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="plants.html">plants</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="right-footer">
+            <h1 style="color: #fff; font-size: 2.6rem;">SERVICES</h1>
+            <div>
+                <a href="#UI/UX Design">Larm</a>
+                <a href="#Branding">Larm</a>
+                <a href="#App Design">Larm</a>
+                <a href="#App Design">Larm</a>
+            </div>
+        </div>
+        <div class="social-icons">
+            <h1 style="color: #fff; font-size: 2.6rem;">Follows us on</h1>
+            <a href="#facebook"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#linkedin"><i class="fab fa-linkedin"></i> Linkedin</a>
+            <a href="#instagram"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </footer>
+
+    <!-- Scroll To Top -->
+    <button id="scrollToTop" title="scrollToTop">↑</button>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                scrollToTopBtn.style.display = 'none';
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
