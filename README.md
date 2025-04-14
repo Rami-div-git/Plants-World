@@ -24,7 +24,7 @@ Although it currently includes one plant and one service, the structure is desig
 - JavaScript (used for a "scroll to top" button functionality)
 - **sidebar menu button** using JavaScript for better navigation on small screens  
 - **Responsive Design** — optimized for small screens and mobile devices 📱
-- **Hosted online** via [GitHub Pages](https://rami-div-git.github.io/Plants/)
+- **Hosted online** via [GitHub Pages](https://rami-div-git.github.io/Plants-World/)
 
 ## 🚀 How to Run the Project
 
